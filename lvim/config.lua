@@ -3,16 +3,16 @@
  `lvim` is the global options object
 ]]
 -- vim options
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
 vim.opt.relativenumber = true
 
 -- general
 lvim.log.level = "info"
 lvim.format_on_save = {
-  enabled = true,
-  -- pattern = "*.lua",
-  -- timeout = 1000,
+    enabled = true,
+    -- pattern = "*.lua",
+    -- timeout = 1000,
 }
 lvim.colorscheme = "catppuccin"
 -- to disable icons and use a minimalist setup, uncomment the following
@@ -25,8 +25,8 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.lsp.diagnostics.virtual_text = false
 lvim.keys.normal_mode["<C-u>"] = "<C-u>zz"
 lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
-lvim.keys.normal_mode["<C-w>s"] = "<C-w-"
-lvim.keys.normal_mode["<C-w>v"] = "<C-w\\"
+-- lvim.keys.normal_mode["<C-w>s"] = "<C-w-"
+-- lvim.keys.normal_mode["<C-w>v"] = "<C-w\\"
 
 
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
@@ -107,23 +107,25 @@ lvim.builtin.treesitter.auto_install = true
 
 -- -- Additional Plugins <https://www.lunarvim.org/docs/plugins#user-plugins>
 lvim.plugins = {
-  { "christoomey/vim-tmux-navigator" },
-  { "catppuccin/nvim" },
-  {
-    "folke/trouble.nvim",
-    cmd = "TroubleToggle",
-  },
+    { "jeffkreeftmeijer/vim-numbertoggle" },
+    { "ThePrimeagen/harpoon" },
+    { "christoomey/vim-tmux-navigator" },
+    { "catppuccin/nvim" },
+    {
+        "folke/trouble.nvim",
+        cmd = "TroubleToggle",
+    },
 
-  {
-    'wfxr/minimap.vim',
-    build = "cargo install --locked code-minimap",
-    -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
-    config = function()
-      vim.cmd("let g:minimap_width = 10")
-      vim.cmd("let g:minimap_auto_start = 1")
-      vim.cmd("let g:minimap_auto_start_win_enter = 1")
-    end,
-  },
+    {
+        'wfxr/minimap.vim',
+        build = "cargo install --locked code-minimap",
+        -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
+        config = function()
+            vim.cmd("let g:minimap_width = 10")
+            vim.cmd("let g:minimap_auto_start = 1")
+            vim.cmd("let g:minimap_auto_start_win_enter = 1")
+        end,
+    },
 
 }
 
