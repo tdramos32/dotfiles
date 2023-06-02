@@ -1,0 +1,4 @@
+https://www.ricalo.com/blog/install-powerline-ubuntu/
+COMMAND:
+    curl https://raw.githubusercontent.com/imomaliev/tmux-bash-completion/master/completions/tmux > ~/.bash_completion
+
