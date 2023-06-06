@@ -216,7 +216,7 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # exec_always --no-startup-id $HOME/.config/polybar/i3wmthemer_bar_launch.sh
-exec_always feh --bg-scale /home/tdramos32/Pictures/wallpaperflare.com_wallpaper.jpg 
+exec_always feh --bg-scale $HOME/Pictures/wallpaperflare.com_wallpaper.jpg 
 # exec_always feh --bg-scale /home/tdramos32/Pictures/wp4816762-nebula-4k-wallpapers.jpg
 # exec_always feh --bg-center /home/tdramos32/Downloads/727676.jpg
 
@@ -231,7 +231,7 @@ client.unfocused #56737a #1e1e20 #56737a #2c5159 #2c5159
 client.urgent #56737a #1e1e20 #56737a #2c5159 #2c5159
 client.placeholder #56737a #1e1e20 #56737a #2c5159 #2c5159
 
-client.background #1e1e20
+# client.background #1e1e20
 
 # Gaps
 gaps inner 5
