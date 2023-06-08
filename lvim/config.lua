@@ -144,22 +144,10 @@ lvim.plugins = {
 lvim.transparent_window = true
 
 --Spectre Config Default from Github readme
--- vim.keymap.set('n', '<leader>R', '<cmd>lua require("spectre").open()<CR>', {
---     desc = "Open Spectre"
--- })
--- vim.keymap.set('n', '<leader>rw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
---     desc = "Search current word"
--- })
--- vim.keymap.set('v', '<leader>rw', '<esc><cmd>lua require("spectre").open_visual()<CR>', {
---     desc = "Search current word"
--- })
--- vim.keymap.set('n', '<leader>rp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', {
---     desc = "Search on current file"
--- })
 lvim.builtin.which_key.mappings["r"] = {
     name = "Spectre",
     o = { '<cmd>lua require("spectre").open()<CR>', "Open Spectre" },
-    w = { '<esc><cmd>lua require("spectre").open_visual()<CR>', "Search current word" },
+    w = { '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', "Search current word" },
     p = { '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>',
         "Search on current file" },
 }
@@ -167,11 +155,3 @@ lvim.builtin.which_key.vmappings["r"] = {
     name = "Spectre",
     w = { '<esc><cmd>lua require("spectre").open_visual()<CR>', "Search current word" },
 }
--- lvim.builtin.which_key.mappings["ro"] = { '<cmd>lua require("spectre").open()<CR>',
---     "Open Spectre" }
--- lvim.builtin.which_key.vmappings["rw"] = { '<cmd>lua require("spectre").open_visual({select_word=true})<CR>',
---     "Search current word" }
--- lvim.builtin.which_key.mappings["rw"] = { '<esc><cmd>lua require("spectre").open_visual()<CR>',
---     "Search current word" }
--- lvim.builtin.which_key.mappings["rp"] = { '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>',
---     "Search on current file" }
