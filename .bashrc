@@ -115,26 +115,14 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# Lunar Vim path
-export PATH="/home/tdramos32/.local/bin/lvim:$PATH"
-
-export PATH="/home/tdramos32/.cargo/bin:$PATH"
-
-export PATH="/usr/local/lib/nodejs/node-v18.16.0-linux-x64/bin:$PATH"
-
-
-export PATH="$PATH:/usr/local/go/bin"
 . "$HOME/.cargo/env"
 
-alias ide='bash /home/tdramos32/.config/tmux/ide.sh'
-alias cd1='cd ../'
-alias cd2='cd ../../'
-alias cd3='cd ../../../'
-alias cd4='cd ../../../../'
-alias cd5='cd ../../../../../'
 
-export PATH="$PATH:$HOME/.config/i3/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+source /home/tdramos32/alacritty/extra/completions/alacritty.bash
+export PATH="$PATH:$HOME/.local/bin"
+
+
 # Powerline configuration
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
   powerline-daemon -q
@@ -143,4 +131,16 @@ if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
   source /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
-screenfetch-dev
+alias ide="bash /$HOME/.config/tmux/ide.sh"
+alias cd1='cd ../'
+alias cd2='cd ../../'
+alias cd3='cd ../../../'
+alias cd4='cd ../../../../'
+alias cd5='cd ../../../../../'
+
+alias vi='lvim'
+alias vim='lvim'
+alias lv='lvim'
+alias vi='lvim'
+
+screenfetch
