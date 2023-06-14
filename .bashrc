@@ -143,4 +143,6 @@ alias vim='lvim'
 alias lv='lvim'
 alias vi='lvim'
 
+alias me='echo `whoami`@`hostname`'
+
 screenfetch
