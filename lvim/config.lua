@@ -25,8 +25,8 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 vim.diagnostic.config({ virtual_text = false })
 lvim.keys.normal_mode["<C-u>"] = "<C-u>zz"
 lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
--- lvim.keys.normal_mode["<C-w>s"] = "<C-w-"
--- lvim.keys.normal_mode["<C-w>v"] = "<C-w\\"
+lvim.keys.normal_mode["<C-w>-"] = "<C-w>s"
+lvim.keys.normal_mode["<C-w>\\"] = "<C-w>v"
 
 
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
