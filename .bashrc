@@ -123,13 +123,13 @@ source /home/tdramos32/alacritty/extra/completions/alacritty.bash
 export PATH="$PATH:$HOME/.local/bin"
 
 
-# Powerline configuration
-if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
-  powerline-daemon -q
-  POWERLINE_BASH_CONTINUATION=1
-  POWERLINE_BASH_SELECT=1
-  source /usr/share/powerline/bindings/bash/powerline.sh
-fi
+# # Powerline configuration
+# if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+#   powerline-daemon -q
+#   POWERLINE_BASH_CONTINUATION=1
+#   POWERLINE_BASH_SELECT=1
+#   source /usr/share/powerline/bindings/bash/powerline.sh
+# fi
 
 alias ide="bash /$HOME/.config/tmux/ide.sh"
 alias cd1='cd ../'
