@@ -39,7 +39,7 @@
 	},
 	"editor.lineNumbers": "on",
 	"workbench.iconTheme": "material-icon-theme",
-	"indentRainbow.ignoreErrorLanguages": "all",
+	"indentRainbow.ignoreErrorLanguages": [],
 	"terminal.integrated.fontFamily": "Hack Nerd Font",
 	"vsicons.dontShowNewVersionMessage": true,
 	"git.confirmSync": false,
@@ -49,5 +49,14 @@
 	"todohighlight.isEnable": true,
 	"editor.insertSpaces": false,
 	"prettier.useTabs": true,
-	"window.zoomLevel": 1
+	"window.zoomLevel": 1,
+	"cSpell.userWords": [
+		"Catppuccin",
+		"dont",
+		"esbenp",
+		"rgba",
+		"todohighlight",
+		"vsicons"
+	],
+	"cSpell.enabled": false
 }
