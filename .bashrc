@@ -67,7 +67,8 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\w\a\]$PS1"
+    # PS1="\w\a\]$PS1"
+    PS1="$PS1"
     ;;
 *)
     ;;
@@ -140,9 +141,8 @@ alias cd5='cd ../../../../../'
 alias vi='lvim'
 alias vim='lvim'
 alias lv='lvim'
-alias vi='lvim'
-
 alias me='echo `whoami`@`hostname`'
+alias obsidian='./Obsidian-1.3.5.AppImage'
 
 screenfetch
 
@@ -243,3 +243,5 @@ export PATH="$HOME/.config/tmux/bin:$PATH"
 PS1="$PS1\n❯ "
 
 source "$HOME/.git-prompt.sh"
+
+
