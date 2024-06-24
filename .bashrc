@@ -56,11 +56,19 @@ if [ -n "$force_color_prompt" ]; then
 	fi
 fi
 
+# if [ "$color_prompt" = yes ]; then
+# 	PS1='\[\033[01;34m\]\w\[\033[01;32m\]$(__git_ps1 " git-branch::(%s)")\[\033[00m\] '
+# else
+# 	#PS1='\wgit::$(__git_ps1 " git-branch::(%s)") '
+# 	PS1='\w$(__git_ps1 " git-branch::(%s)") '
+# fi
+# unset color_prompt force_color_prompt
+
 if [ "$color_prompt" = yes ]; then
-	PS1='\[\033[01;34m\]\w\[\033[01;32m\]$(__git_ps1 " git-branch::(%s)")\[\033[00m\] '
+	PS1='\[\033[01;34m\]\w\[\033[01;32m\]$(__git_ps1 "  %s")\[\033[00m\] '
 else
-	#PS1='\wgit::$(__git_ps1 " git-branch::(%s)") '
-	PS1='\w$(__git_ps1 " git-branch::(%s)") '
+	#PS1='\wgit::$(__git_ps1 " Git  %s") '
+	PS1='\w$(__git_ps1 "  %s") '
 fi
 unset color_prompt force_color_prompt
 
@@ -122,7 +130,7 @@ if ! shopt -oq posix; then
 fi
 
 alias me='echo `whoami`@`hostname`'
-screenfetch
+neofetch
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
@@ -133,5 +141,7 @@ export PATH="$PATH:$HOME/ninja"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 export PATH="$PATH:$HOME/.cargo/bin"
-source /home/tdramos32/.config/alacritty/extra/completions/alacritty.bash
+# source /home/tdramos32/.config/alacritty/extra/completions/alacritty.bash
+source $HOME/.config/alacritty/extra/completions/alacritty.bash
 export PATH="$PATH:$HOME/libplacebo/build"
+alias ide='/home/tdramos32/ide.sh'
