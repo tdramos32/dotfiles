@@ -38,7 +38,8 @@ save_to_clipboard = false
 program = "/usr/bin/bash"
 
 [window]
-opacity = 0.975
+# opacity = 0.975
+opacity = 1.0
 
 [window.class]
 general = "Alacritty"

@@ -64,7 +64,8 @@ else
 fi
 unset color_prompt force_color_prompt
 
-PS1="$PS1\n "
+# PS1="$PS1\n "
+PS1="󰉋 $PS1\n "
 
 source "$HOME/.git-prompt.sh"
 
@@ -133,3 +134,4 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 
 export PATH="$PATH:$HOME/.cargo/bin"
 source /home/tdramos32/.config/alacritty/extra/completions/alacritty.bash
+export PATH="$PATH:$HOME/libplacebo/build"
