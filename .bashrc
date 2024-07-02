@@ -71,9 +71,7 @@ else
 fi
 unset color_prompt force_color_prompt
 
-PS1="󰉋 $PS1\n "
 PS1="󰉋 $PS1\n❯ "
-# PS1="󰉋 $PS1\n "
 
 source "$HOME/.git-prompt.sh"
 
