@@ -35,7 +35,8 @@ multiplier = 3
 save_to_clipboard = false
 
 [shell]
-program = "/usr/bin/bash"
+# program = "/usr/bin/bash"
+program = "tmux"
 
 [window]
 # opacity = 0.975
