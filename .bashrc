@@ -142,3 +142,4 @@ export PATH="$PATH:$HOME/.cargo/bin"
 # source /home/tdramos32/.config/alacritty/extra/completions/alacritty.bash
 source $HOME/.config/alacritty/extra/completions/alacritty.bash
 alias ide='/home/tdramos32/ide.sh'
+alias fzd='cd $(find . -type d -print | fzf --preview="ls -ACF -1 {}")'
